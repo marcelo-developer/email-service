@@ -46,11 +46,6 @@ cron.schedule('0 9 * * *', enviarEmail, { timezone: 'America/Sao_Paulo' });
 cron.schedule('0 12 * * *', enviarEmail, { timezone: 'America/Sao_Paulo' });
 cron.schedule('0 17 * * *', enviarEmail, { timezone: 'America/Sao_Paulo' });
 cron.schedule('0 21 * * *', enviarEmail, { timezone: 'America/Sao_Paulo' });
-// 🔁 ENVIO DE TESTE A CADA 5 MINUTOS
-cron.schedule('*/5 * * * *', () => {
-  console.log('🧪 Enviando e-mail de teste (intervalo de 5 min)');
-  enviarEmail();
-}, { timezone: 'America/Sao_Paulo' });
 
 
 app.listen(process.env.PORT, () => {
