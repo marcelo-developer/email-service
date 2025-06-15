@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-const destinatario = "seuemail@dominio.com"; // Substitua aqui
+const destinatario = "marcelo.machado@viannasempre.com.br"; // Substitua aqui
 
 const enviarEmail = async () => {
   try {
